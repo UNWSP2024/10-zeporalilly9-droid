@@ -8,3 +8,30 @@
 # Mark Jones	39119	IT	Programmer
 # Joy Rogers	81774	Manufacturing	Engineer
 # The program should store the data in the three objects, then display the data for each employee on the screen.
+# Program #4: Employee Class
+# Author: Zepora Lilly
+# Date: 11/7/2025
+
+class Employee:
+    def __init__(self, name, id_number, department, job_title):
+        self.name = name
+        self.id_number = id_number
+        self.department = department
+        self.job_title = job_title
+
+    def display_info(self):
+        print(f"Name: {self.name}")
+        print(f"ID Number: {self.id_number}")
+        print(f"Job Title: {self.job_title}")
+        print("-"*30)
+
+# Create three Employee objects
+emp1 = Employee("Susan Meyers", 47899, "Accounting", "Vice President")
+emp2 = Employee("Mark Jones", 39119, "IT", "Programmer")
+emp3 = Employee("Joy Rogers", 81774, "Manufacturing", "Engineer")
+
+# Display each employee's information
+emp1.display_info()
+emp2.display_info()
+emp3.display_info()
+
